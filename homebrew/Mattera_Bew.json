@@ -1,0 +1,1418 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MatteraBew",
+				"abbreviation": "MATTB",
+				"full": "Mattera Bew",
+				"url": "",
+				"authors": [
+					"Mattera"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Crystalline Cyclops Mummy",
+			"size": "L",
+			"type": "giant",
+			"source": "MatteraBew",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 250,
+				"formula": "20d10 + 140"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 24,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"understands Giant and Common but can't speak"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Poor Depth Perception",
+					"entries": [
+						"The cyclops has disadvantage on any attack roll against a target more than 30 ft. away."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The cyclops has advantage on saving throws against spells and other magical effects other than fire."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The cyclops' weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Flammable",
+					"entries": [
+						"If the cyclops takes fire damage it catches fire and takes ({@dice 1d4}) fire damage at the start of each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cyclops makes two slam attacks or four if on fire."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}29 ({@damage 5d8 + 7}) bludgeoning damage.",
+						"If the cyclops hit the same target with this attack twice, the target is thrown 15ft in a direction chosen by the cyclops."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, range 30/120 ft., one target. {@h}40 ({@damage 6d10 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Time Gaze {@recharge 5}",
+					"entries": [
+						"The golem targets one or more creatures it can see within 30 feet of it. Each target must make a {@dc 19} Constitution saving throw against this magic. On a failed save, the target takes 27 ({@damage 6d8}) necrotic damage. The target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. Any creatures that end their turn within 5 ft of the target take 11 ({@damage 2d10}) necrotic damage. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/469/stone-golem.mp3",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "RoT"
+				},
+				{
+					"source": "SKT"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				}
+			],
+			"fluff": {
+				"name": "Stone Golem",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Stone Golem.jpg"
+						}
+					}
+				],
+				"entries": [
+					"Stone golems display great variety in shape and form, cut and chiseled from stone to appear as tall, impressive statues. Though most bear humanoid features, stone golems can be carved in any form the sculptor can imagine. Ancient stone golems found in sealed tombs or flanking the gates of lost cities sometimes take the forms of giant beasts.",
+					"Like other golems, stone golems are nearly impervious to spells and ordinary weapons. Creatures that fight a stone golem can feel the ebb and flow of time slow down around them, almost as though they were made of stone themselves.",
+					{
+						"type": "entries",
+						"name": "Golems",
+						"entries": [
+							"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
+							"To create a golem, one requires a manual of golems (see the Dungeon Master's Guide). The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
+							{
+								"name": "Elemental Spirit in Material Form",
+								"entries": [
+									" The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
+									"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
+									"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
+									"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
+								],
+								"type": "entries"
+							},
+							{
+								"name": "Ageless Guardians",
+								"entries": [
+									" Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
+								],
+								"type": "entries"
+							},
+							{
+								"name": "Blind Obedience",
+								"entries": [
+									" When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is incapacitated, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
+								],
+								"type": "entries"
+							},
+							{
+								"name": "Constructed Nature",
+								"entries": [
+									" A golem doesn't require air, food, drink, or sleep."
+								],
+								"type": "entries"
+							}
+						]
+					}
+				]
+			},
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTabInput": 0,
+			"activeTabOutput": 0,
+			"languageTags": [
+				"C",
+				"CS",
+				"GI"
+			],
+			"ixBrew": null,
+			"vulnerable": [
+				"fire"
+			],
+			"reaction": [
+				{
+					"name": "Passing Glance",
+					"entries": [
+						"The cyclops uses its time Gaze against one creature it can see within 10 ft of it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Death Mold Zombie",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"zombie"
+				]
+			},
+			"source": "MatteraBew",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"str": "+5"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"passive": 8,
+			"cr": "3",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"trait": [
+				{
+					"name": "Spore Death",
+					"entries": [
+						"When the zombie is reduced to 0 hp and doesn't survive with its Undead Fortitude, it explodes in a cloud of spores. Each creature within 5 feet of the zombie must succeed on a {@dc 13} Constitution saving throw or take 9 ({@damage 2d8}) necrotic damage. If the target is reduced to 0 hit points from this damage, they immediately die and return as a mold zombie."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie to 0 hp, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hp instead."
+					]
+				},
+				{
+					"name": "Radiant Weakness",
+					"entries": [
+						"If the zombie takes any radiant damage on its turn, its movement speed is halved."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zombie makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Plague Breath {@recharge}",
+					"entries": [
+						"The zombie breathes a cloud of spores in 15-foot cone. Each creature in that area must succeed on a {@dc 13} Constitution saving throw or take 10 ({@damage 3d6}) necrotic damage. If the target is reduced to 0 hit points from this damage, they immediately die and return as a mold zombie."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"environment": [
+				"swamp"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex%20(3pp)/Moldzombie.jpg"
+						}
+					}
+				],
+				"entries": [
+					"{@i Black pustules cover a shambling corpse. The zombie lets out a baleful moan, breathing a cloud of black spores.}",
+					"Mold zombies are undead created by necromantic spores. They serve no masters and have no desires other than spreading their infection.",
+					{
+						"type": "entries",
+						"name": "Spore Infection",
+						"entries": [
+							"Mold zombies are created when a humanoid inhales the spores of an iumenta flower, a red-vined, black-petaled swamp plant that smells of rotting flesh. Once inhaled, the host contracts iumenta pox. The spores quickly shut down internal organs while growing into the muscles and the brain. When the host dies, the spores reanimate the corpse into a mold zombie."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Spread the Spores",
+						"entries": [
+							"Mold zombies are controlled by their spores, which seek to infect more humanoids. When a zombie sees a potential host, it fights to the death, hoping to kill infected creatures so it can immediately rise as an undead. Mold zombies attract other mold zombies and move in large groups."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Undead Nature",
+						"entries": [
+							"The mold zombie doesn't require air, food, drink, or sleep"
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex%20(3pp)/Moldzombie_token.png",
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"senseTags": [
+				"D"
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTabInput": 4,
+			"activeTabOutput": 0,
+			"ixBrew": 930
+		},
+		{
+			"name": "Death Mold Crocodile",
+			"size": "L",
+			"type": "beast",
+			"source": "MatteraBew",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"stealth": "+2"
+			},
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spore Death",
+					"entries": [
+						"When the crocodile is reduced to 0 hp and doesn't survive with its Undead Fortitude, it explodes in a cloud of spores. Each creature within 5 feet of the zombie must succeed on a {@dc 13} Constitution saving throw or take 9 ({@damage 2d8}) necrotic damage. If the target is reduced to 0 hit points from this damage, they immediately die and return as a mold zombie."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie to 0 hp, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hp instead."
+					]
+				},
+				{
+					"name": "Radiant Weakness",
+					"entries": [
+						"If the crocodile takes any radiant damage on its turn, its movement speed is halved."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 7 ({@damage 2d6}) necrotic damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target"
+					]
+				},
+				{
+					"name": "Plague Breath {@recharge}",
+					"entries": [
+						"The crocodile breathes a cloud of spores in 15-foot cone. Each creature in that area must succeed on a {@dc 13} Constitution saving throw or take 10 ({@damage 3d6}) necrotic damage. If the target is reduced to 0 hit points from this damage, they immediately die and return as a mold zombie."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"urban"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/107/crocodile.mp3",
+			"damageTags": [
+				"P",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				}
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTabInput": 4,
+			"activeTabOutput": 0,
+			"ixBrew": 931,
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Sand Crocodile",
+			"size": "H",
+			"type": "undead",
+			"source": "MatteraBew",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d12 + 16"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50,
+				"burrow": 30
+			},
+			"str": 19,
+			"dex": 9,
+			"con": 15,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"stealth": "+5"
+			},
+			"passive": 10,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Undead",
+					"entries": [
+						"All the usual undead stuff applies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crocodile makes two attacks: one with its bite and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage, and the target is {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target. In addition, the target must make a {@dc 15} Constitution save or begin turning to sand taking 7 ({@damage 2d6}) necrotic damage now and at the end of each of their turns. The target may repeat this saving through at the end of each turn. If the target is reduced to 0 hit points from this damage, they immediately die as their body disintegrates into sand."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target not {@condition grappled} by the crocodile. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"page": 324,
+			"environment": [
+				"swamp"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/196/giant-crocodile.mp3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "ToA"
+				}
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTabInput": 4,
+			"activeTabOutput": 0,
+			"ixBrew": null,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Crocodile God",
+			"size": "H",
+			"type": "beast",
+			"source": "MatteraBew",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "14d12 + 70"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50,
+				"burrow": 50
+			},
+			"str": 21,
+			"dex": 15,
+			"con": 21,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"stealth": "+12"
+			},
+			"passive": 10,
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Advantage on Saving throws against magic."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crocodile makes two attacks: one with its bite and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}49 ({@damage 8d10 + 5}) piercing damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target not {@condition grappled} by the crocodile. {@h}32 ({@damage 6d8 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Water blast {@recharge}",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, range 60 ft., 5ft wide line of water. Strength saving throw or take 32 ({@damage 6d8 + 5}) bludgeoning damage, half on a save. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Death Roll",
+					"entries": [
+						"The crocodile god moves up to its speed without provoking opportunity attacks and through enemy spaces. Any creatures in a space moved through by the crocodile god must make a {@dc 19} saving throw or take 33 ({@dice 8d8}) and fall {@condition prone}."
+					]
+				}
+			],
+			"page": 324,
+			"environment": [
+				"swamp"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/196/giant-crocodile.mp3",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "ToA"
+				}
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTabInput": 1,
+			"activeTabOutput": 0,
+			"legendary": [
+				{
+					"name": "Teleport (2 actions)",
+					"entries": [
+						"Teleports to and from a body of water up to 60 ft away."
+					]
+				},
+				{
+					"name": "Tail Slap (1 action)",
+					"entries": [
+						"Uses tail attack"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bloodied Frenzy",
+					"entries": [
+						"Uses water blast when bloodied."
+					]
+				}
+			],
+			"activeTab__input": 4,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Nephalot",
+			"size": "M",
+			"type": "humanoid",
+			"source": "MatteraBew",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"infernal protection"
+					]
+				}
+			],
+			"hp": {
+				"average": 178,
+				"formula": "21d8 + 84"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 19,
+			"wis": 21,
+			"cha": 20,
+			"save": {
+				"dex": "+7",
+				"con": "+8",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"intimidation": "+7",
+				"perception": "+9",
+				"stealth": "+7"
+			},
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"senses": [
+				"blood sense 90 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Giant",
+				"Infernal",
+				"Sylvan"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Blood Sense",
+					"entries": [
+						"A blood hag automatically senses the blood of living creatures within 90 feet and can pinpoint their locations within 30 feet."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Nephalot can climb difficult surfaces, including upside down on ceilings, without having to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blood hag makes two claw attacks and one blood-drinking hair attack."
+					]
+				},
+				{
+					"name": "Blood-Drinking Tendrils",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage and a Medium or smaller target is {@condition grappled} (escape {@dc 16}). A {@condition grappled} creature takes 13 ({@damage 2d8 + 3}) necrotic damage at the start of the hag's turns, and the hag heals half as many hit points. The hag gains excess healing as temporary hit points. The hag can grapple one or two creatures at a time. Also see Face Peel."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Call the Blood",
+					"entries": [
+						"The blood hag targets a living creature within 30 feet that she detects with her blood sense and makes the target bleed uncontrollably. The target must make a successful {@dc 16} Constitution saving throw or suffer one of the effects listed below. A target that saves successfully cannot be affected by this hag's ability again for 24 hours.",
+						"1. Blood Choke Curse. The target's mouth fills with blood, preventing any speech or spellcasting with verbal components for 1 minute.",
+						"2. Blood Eye. The target's eyes well up with bloody tears. The target is {@condition blinded} for 1 minute.",
+						"3. Heart Like Thunder. The target hears only the rushing of blood and their thumping heart. They are deaf for 1 minute.",
+						"4. Rupturing Arteries. The victim suffers 7 ({@damage 2d6}) slashing damage as its veins and arteries burst open. The target repeats the saving throw at the beginning of each of its turns. It takes 7 ({@damage 2d6}) necrotic damage if the saving throw fails, but the effect ends on a successful save."
+					]
+				},
+				{
+					"name": "Face Peel",
+					"entries": [
+						"The blood hag peels the face off one {@condition grappled} foe. The target must make a {@dc 18} Dexterity saving throw. If the saving throw fails, the face is torn off; the target takes 38 ({@damage 8d6 + 10}) slashing damage and is {@condition stunned} until the start of the hag's next turn. If the save succeeds, the target takes half damage and isn't {@condition stunned}. Heal, regeneration, or comparable magic restores the stolen features; other curative magic forms a mass of scar tissue. The peeled-off face is a tiny, animated object (per the spell—20 HP, AC 18, no attack, Str 4, Dex 18) under the hag's control. It retains the former owner's memories and personality. Blood hags keep such faces as trophies, but they can also wear someone's face to gain advantage on Charisma (Deception) checks made to imitate the face's former owner."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The hag's innate spellcasting ability is Charisma (spell save {@dc 16}). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell minor illusion}",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bestow curse}",
+							"{@spell invisibility}",
+							"{@spell mirror image}"
+						],
+						"1e": [
+							"{@spell dominate person}",
+							"{@spell Synaptic Static}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB%20(3pp)/Blood%20Hag.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 0,
+			"activeTab__output": 0,
+			"ixBrew": null,
+			"isNpc": true,
+			"traitTags": [
+				"Spider Climb"
+			],
+			"legendary": [
+				{
+					"name": "Call the Blood (2 actions)",
+					"entries": [
+						"Nephalot uses Call the Blood with a chosen affect."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Nephalot moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Blood drinking tendrils",
+					"entries": [
+						"Nephalot uses Blood drinking Tendrils."
+					]
+				}
+			]
+		},
+		{
+			"name": "Conjurer of Cheap Tricks",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "MatteraBew",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 17,
+					"condition": "with {@spell mage armor} and {@item ring of protection}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "17d8 - 34"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 7,
+			"int": 19,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+8",
+				"wis": "+5",
+				"cha": "+1",
+				"str": "+0",
+				"dex": "+4",
+				"con": "-1"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Malignant Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher)",
+					"entries": [
+						"As a bonus action, the conjurer teleports two creatures that it can see within 60 feet of it, swapping their positions."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"page": 212,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The conjurer is a 10th-level spellcaster. Its spellcasting ability is intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The conjurer has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Conjuration spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell mage hand}",
+								"{@spell poison spray}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}*",
+								"{@spell misty step}*",
+								"{@spell web}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell stinking cloud}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's black tentacles}*",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}*",
+								"{@spell conjure elemental}*"
+							],
+							"slots": 4
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/97/conjurer.mp3",
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"otherSources": [
+				{
+					"source": "TftYP"
+				}
+			],
+			"fluff": {
+				"name": "Conjurer",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs."
+						]
+					}
+				]
+			},
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 0,
+			"activeTab__output": 0
+		},
+		{
+			"source": "MatteraBew",
+			"name": "Werecroc Monk",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"lizardfolk"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 22,
+			"con": 15,
+			"int": 10,
+			"wis": 19,
+			"cha": 8,
+			"skill": {
+				"acrobatics": "+9",
+				"perception": "+4",
+				"stealth": "+12",
+				"survival": "+7"
+			},
+			"passive": 14,
+			"languages": [
+				"Draconic"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The lizardfolk can hold its breath for 15 minutes."
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the lizardfolk is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				},
+				{
+					"name": "Stunning Strike {@recharge 5}",
+					"entries": [
+						"When the lizardfolk hits another creature with a melee weapon attack, the target must succeed on a {@dc 16} Constitution saving throw or be {@condition stunned} until the end of the lizardfolk's next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The lizardfolk makes three attacks: two with its unarmed strikes and one with its tail."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d4 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missiles",
+					"entries": [
+						"The lizardfolk deflects the missile when it is hit by a ranged weapon attack, reducing the damage it takes to 0."
+					]
+				},
+				{
+					"name": "Polearm Master",
+					"entries": [
+						"Other creatures provoke an opportunity attack from the Monk when they enter the Monk's reach."
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"ixBrew": null,
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Focus Spirit",
+					"entries": [
+						"The Monk recharges it's stunning strike."
+					]
+				}
+			]
+		},
+		{
+			"name": "Master of Locusts",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "MatteraBew",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"int": "+4"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"deception": "+6",
+				"perception": "+3",
+				"stealth": "+9"
+			},
+			"resist": [
+				"poison"
+			],
+			"passive": 13,
+			"languages": [
+				"Thieves' cant",
+				"Common",
+				"Elvish"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Heart of the Swarm",
+					"entries": [
+						"When the master of locusts makes a melee attack against a creature, that creature can't make opportunity attacks against the master for the rest the mater's turn. The master may choose to turn all or a portion of his body into a swarm of locusts transforming equipment alike. Partial hitpoints or all hitpoints depending."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Rakish Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated}, or the master is within 5ft of the target there are no other creatures within 5 feet of the master and the assassin doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Swarm Form",
+					"entries": [
+						"While in Swarm of Locusts form, the master is resistant to bludgeoning, piercing and slashing damage and has the following condition immunities: {@condition charmed}, {@condition frightened}, {@condition grappled}, {@condition paralyzed}, {@condition petrified}, {@condition prone}, {@condition restrained}, {@condition stunned}",
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/26/assassin.mp3",
+			"altArt": [
+				{
+					"name": "Vistana Assassin",
+					"source": "CoS"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"otherSources": [
+				{
+					"source": "CoS"
+				},
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "RoT"
+				},
+				{
+					"source": "SKT"
+				},
+				{
+					"source": "TftYP"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				}
+			],
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+				]
+			},
+			"profSave": {},
+			"profSkill": {
+				"deception": 1
+			},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"ixBrew": 8
+		}
+	]
+}
