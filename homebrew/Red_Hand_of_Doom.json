@@ -11,9 +11,12 @@
 			}
 		]
 	},
+	"dateAdded": 1565990096,
 	"monster": [
 		{
 			"name": "Doom Hand Cleric",
+			"source": "RHoD",
+			"page": 161,
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -21,7 +24,6 @@
 					"goblinoid"
 				]
 			},
-			"source": "RHoD",
 			"alignment": [
 				"L",
 				"E"
@@ -47,6 +49,9 @@
 			"int": 13,
 			"wis": 16,
 			"cha": 11,
+			"skill": {
+				"medicine": "+5"
+			},
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -56,23 +61,6 @@
 				"Goblin"
 			],
 			"cr": "4",
-			"trait": [
-				{
-					"name": "Arcane Advantage",
-					"entries": [
-						"Once per turn, the hobgoblin can deal an extra 7 ({@dice 2d6}) damage to a creature it hits with a damaging spell attack if that target is within 5 feet of an ally of the hobgoblin and that ally isn't {@condition incapacitated}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with two hands."
-					]
-				}
-			],
-			"page": 161,
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -123,27 +111,26 @@
 					"type": "spellcasting"
 				}
 			],
+			"trait": [
+				{
+					"name": "Arcane Advantage",
+					"entries": [
+						"Once per turn, the hobgoblin can deal an extra 7 ({@dice 2d6}) damage to a creature it hits with a damaging spell attack if that target is within 5 feet of an ally of the hobgoblin and that ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with two hands."
+					]
+				}
+			],
 			"environment": [
 				"forest",
 				"grassland",
 				"hill"
-			],
-			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/272/hobgoblin-devastator.mp3",
-			"languageTags": [
-				"C",
-				"GO"
-			],
-			"senseTags": [
-				"D"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"fluff": {
 				"name": "Hobgoblin Devastator",
@@ -183,6 +170,23 @@
 					}
 				]
 			},
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/272/hobgoblin-devastator.mp3",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
 			"profSave": {},
 			"profSkill": {
 				"medicine": 1
@@ -192,10 +196,192 @@
 			},
 			"activeTab__input": 2,
 			"activeTab__output": 0,
-			"skill": {
-				"medicine": "+5"
-			},
 			"ixBrew": 11
+		},
+		{
+			"name": "Wyrmlord Koth",
+			"source": "RHoD",
+			"page": 347,
+			"otherSources": [
+				{
+					"source": "CoS"
+				},
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "RoT"
+				},
+				{
+					"source": "SKT"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "WDH"
+				},
+				{
+					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				}
+			],
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Dragonscale Sorcerer"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8",
+				"average": 48
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 11,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"int": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+4",
+				"history": "+4",
+				"perception": "-4"
+			},
+			"passive": 6,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Goblin",
+				"Draconic"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mage is a 8th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell toll the dead|xge}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell polymorph}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Red Dragonscale Sorcerer",
+					"entries": [
+						"Extra fire damage",
+						"Twin Spell",
+						"Quicken Spell",
+						"Fire Resistance"
+					]
+				},
+				{
+					"name": "Items",
+					"entries": [
+						"Potion of Flight (2)",
+						"Potion of Moderate Healing"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Mage",
+				"source": "MM",
+				"entries": [
+					"Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.",
+					"Variant: Familiars",
+					"Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit."
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/v9Jq4dp.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/316/mage.mp3",
+			"languageTags": [
+				"C",
+				"GO",
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
 		}
 	]
 }
