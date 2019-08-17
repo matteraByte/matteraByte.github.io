@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1565990096,
+	"dateAdded": 1566008550,
 	"monster": [
 		{
 			"name": "Doom Hand Cleric",
@@ -263,12 +263,12 @@
 			"wis": 12,
 			"cha": 18,
 			"save": {
-				"int": "+4",
-				"wis": "+4"
+				"int": "+3",
+				"wis": "+3"
 			},
 			"skill": {
-				"arcana": "+4",
-				"history": "+4",
+				"arcana": "+3",
+				"history": "+3",
 				"perception": "-4"
 			},
 			"passive": 6,
@@ -280,12 +280,12 @@
 				"Goblin",
 				"Draconic"
 			],
-			"cr": "6",
+			"cr": "4",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mage is a 8th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
+						"The mage is a 6th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -317,16 +317,9 @@
 								"{@spell fireball}"
 							],
 							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell polymorph}"
-							],
-							"slots": 2
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -381,6 +374,293 @@
 				"RW",
 				"MW",
 				"THW"
+			]
+		},
+		{
+			"name": "Karkilan",
+			"source": "RHoD",
+			"page": 223,
+			"otherSources": [
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "WDH"
+				},
+				{
+					"source": "WDMM"
+				}
+			],
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "9d10 + 27"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 16,
+			"int": 6,
+			"wis": 16,
+			"cha": 9,
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 ft. away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Wound",
+					"entries": [
+						"Karkilan carries Wound, a +1 great axe that crits on a 19 and 20. On a crit the creature must make a {@dc 12} constitution save or take {@dice 1d4} necrotic damage each turn until they or their allies take an action to make a {@dc 10} medicine check to staunch the wound or deal at 1 fire damage to it."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Wound, Greataxe +1",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Minotaur",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Minotaur.jpg"
+						}
+					}
+				],
+				"entries": [
+					"A minotaur's roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.",
+					{
+						"name": "The Beast Within",
+						"type": "entries",
+						"entries": [
+							"Most minotaurs are solitary carnivores that roam labyrinthine dungeons, twisting caves, primeval woods, and the maze-like streets and passages of desolate ruins. A minotaur can visualize every route it might take to close the distance to its prey.",
+							"The scent of blood, the tearing of flesh, and the cracking of bones spur a minotaur's lust for carnage, overwhelming all thought and reason. In a blood rage, a minotaur charges anything it sees, butting and goring like a battering ram, then chopping the fallen in twain.",
+							"Apart from ambushing creatures that wander into its labyrinth, a minotaur cares little for strategy or tactics. Minotaurs seldom organize, they don't respect authority or hierarchy, and they are notoriously difficult to enslave, let alone control."
+						]
+					},
+					{
+						"name": "Cults of the Horned King",
+						"type": "entries",
+						"entries": [
+							"Minotaurs are the dark descendants of humanoids transformed by the rituals of cults that reject the oppression of authority by returning to nature. Inductees often mistake these cults for druidic circles or totemic religions whose ceremonies involve entering a labyrinth while wearing a ceremonial animal mask.",
+							"Within these bounded environments, cultists hunt, kill, and eat wild beasts, indulging their basest primal urges. In the end, however, sacrificial animals are exchanged for humanoid sacrifice-sometimes an inductee that tried to escape the cult after learning its secrets. These labyrinths become blood-soaked halls of slaughter, echoing to the cultists' savagery.",
+							"Unknown to all but their highest-ranking leaders, these mystery cults are creations of the demon lord Baphomet, the Horned King, whose layer of the Abyss is a gigantic labyrinth. Some of his followers are fervent supplicants that plead for strength and power. Others come to the cult seeking a life free from authority's chains-and are liberated of their humanity instead as Baphomet transforms them into the minotaurs that echo his own savage form.",
+							"Although they begin as creations of the Horned King, minotaurs can breed true with one another, giving rise to an independent race of Baphomet's savage children in the world."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/RfVOrH8.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/340/minotaur.mp3",
+			"traitTags": [
+				"Charge",
+				"Reckless"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Jaar",
+			"source": "RHoD",
+			"page": 349,
+			"otherSources": [
+				{
+					"source": "CoS"
+				},
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "RoT"
+				},
+				{
+					"source": "SKT"
+				},
+				{
+					"source": "TftYP"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				}
+			],
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The scout has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The scout makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Scout",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Scout.jpg"
+						}
+					}
+				],
+				"entries": [
+					"Scouts are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance."
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/hpFmVqR.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/435/scout.mp3",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
 			]
 		}
 	]
